@@ -6,6 +6,7 @@
   "scripts": {
     "example1": "node index.js",
     "example2": "DB_HOST=my.1337.life node index.js",
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
