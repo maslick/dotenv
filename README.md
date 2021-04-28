@@ -19,3 +19,19 @@ HOST: my.1337.life
 USER: root
  PWD: test
 ```
+
+```shell
+$ export APP_NAME=my-dotenv
+
+$ heroku login
+$ heroku create $APP_NAME
+$ heroku git:remote --app $APP_NAME
+$ git push heroku master
+
+$ heroku config:set \
+  DB_HOST="my.1337.life" \
+  DB_USER="root" \
+  DB_PASS="******" \
+  --app $APP_NAME
+$ heroku logs --tail
+```
