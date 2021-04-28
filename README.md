@@ -7,7 +7,7 @@ $ git clone https://github.com/maslick/dotenv.git
 $ cd dotenv
 $ npm i
 
-$ cp .dotenv.template .env
+$ cp .env.template .env
 
 $ npm run example1
 HOST: localhost
